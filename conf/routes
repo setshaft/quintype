@@ -3,7 +3,26 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Applications.index()
+GET     /                           controllers.Cars.getCars()
+POST    /users/createUser           controllers.Users.createUser()
+POST    /users/getUser              controllers.Users.getUser()
+POST    /users/getUsers             controllers.Users.getUsers()
+POST    /users/updateUser           controllers.Users.updateUser()
+POST    /users/deleteUser           controllers.Users.deleteUser()
+
+POST    /cars/createCar             controllers.Cars.createCar()
+POST    /cars/getCar                controllers.Cars.getCar()
+POST    /cars/getCars               controllers.Cars.getCars()
+POST    /cars/updateCar             controllers.Cars.updateCar()
+POST    /cars/deleteCar             controllers.Cars.deleteCar()
+POST    /cars/requestCar            controllers.Cars.requestCar()
+
+POST    /rides/createRide           controllers.Rides.createRide()
+POST    /rides/getRide              controllers.Rides.getRide()
+POST    /rides/getRides             controllers.Rides.getRides()
+POST    /rides/updateRide           controllers.Rides.updateRide()
+POST    /rides/deleteRide           controllers.Rides.deleteRide()
+POST    /rides/endRide              controllers.Rides.endRide()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
